@@ -12,5 +12,8 @@ const apiClient = axios.create({
 export default {
   getEvents(){
     return apiClient.get("https://my-json-server.typicode.com/tung13041996/api-test/events");
+  },
+  getEventsDetail(id){
+    return apiClient.get("https://my-json-server.typicode.com/tung13041996/api-test/events/" + id);
   }
 };
